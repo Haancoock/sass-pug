@@ -1,0 +1,35 @@
+include _variables
+// navigation
+mixin mainNavigation(obj, count)
+	nav.main-navigation
+		.container
+			ul.main-navigation__list
+				-var n = 0
+				each val, index in obj
+					li(class= n++ == count - 1 ? 'main-navigation__item_active': '').main-navigation__item
+						a(href= index).main-navigation__link= val
+
+
+mixin breadcrumbs(obj, count)
+	.breadcrumbs
+		ul.breadcrumbs__list
+			-var n = 0
+			-var l = 0
+			each val, index in obj
+				li.breadcrumbs__item
+					a(
+						class=l++ == count - 1 ? 'breadcrumbs__link_active': '' 
+						class="breadcrumbs__link" 
+						href=n++ == count -1 ? null : index)= val
+
+mixin productListIndex(obj, count)
+	.list-index
+		ul.list-index__list
+			-var n = 0
+			-var l = 0
+			each val, index in obj
+				li.list-index__item
+					a(
+						href= n++ == count-1 ? null : index
+						class= l++ == count -1 ? 'list-index__link_active': ''
+						class="list-index__link")= val

@@ -1,0 +1,44 @@
+mixin ftMenu(obj, name)
+	ul.ft-menu
+		span.ft-menu__name= name
+		each value, key in obj 
+			li.ft-menu__element
+				a(href= key).ft-menu__link= value
+-
+	var firstMenu = {
+		'about.html': 'О нас',
+		'price.html': 'Наши цены',
+		'discount.html': 'Наши скидки',
+		'shares.html': 'Акции'}
+-
+	var secondMenu = {
+		'about.html': 'Смартфоны',
+		'price.html': 'Планшеты',
+		'discount.html': 'Компьютеры',
+		'shares.html': 'Аксесуары'}
+-
+	var thirdMenu = {
+		'about.html': 'Телефон',
+		'price.html': 'Адреса',
+		'discount.html': 'Карта проезда',
+		'shares.html': 'Обратная связь'}		
+
+footer.footer
+	.container
+		.ft-left-wrapper
+			a(href="index.html").white-logo
+				img(src="images/logo_white.png", alt="logo").white-logo__image
+		.ft-middle-wrapper
+			+ftMenu(firstMenu, 'О магазине')
+			+ftMenu(secondMenu, 'Каталог')
+			+ftMenu(thirdMenu, 'Контакты')
+		.ft-right-wrapper
+			.mobile-store-wrapper
+				a(href="apple.com").apple
+					img(src="images/apple.png", alt="App Store").apple__image
+				a(href="google.com").google
+					img(src="images/google.png", alt="Google Play").google__image
+			.socials-wrapper
+				a(href="vk.com").vk
+				a(href="facebook.com").facebook
+				a(href="twetter.com").twetter

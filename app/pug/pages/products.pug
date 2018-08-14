@@ -1,1 +1,11 @@
 extends ../products_main
+
+block title
+	title
+		| Hello world 
+block menu
+	+mainNavigation(navMenu, 4)
+block breadcrumbs
+	+breadcrumbs(productsCrumbs, 2)
+block productListIndex
+	+productListIndex(productsIndex, 4)
