@@ -33,3 +33,30 @@ mixin productListIndex(obj, count)
 						href= n++ == count-1 ? null : index
 						class= l++ == count -1 ? 'list-index__link_active': ''
 						class="list-index__link")= val
+
+mixin sidebarMenu(obj, count)
+	nav.sidebar-navigation
+		ul.sidebar-navigation__list
+			-var n = 0
+			each index in obj
+				li(class= n++ == count -1 ? 'sidebar-navigation__item_active': '').sidebar-navigation__item= index.name
+					-var sub = index.submenu
+					if sub
+						ul.sidebar-navigation-submenu__list
+							each subindex in sub
+								li.sidebar-navigation-submenu__item
+									a(href= subindex.url)= subindex.name
+
+mixin prodList(obj)
+	.product
+		each index in obj
+			img(src= index.url).product__image
+			.product__description
+				span.product__title= index.title
+				.product__stats
+					.product__stats-line
+						each stat in index.stats
+							span.product__stats-name= stat.name
+							span.product__stats-value= stat.value
+
+
