@@ -1,11 +1,10 @@
+include _mixins
 header.header
 	.container
-		a(href="index.html").colored-logo
-			img(src="images/logo_colored.png", alt="logo").colored-logo__image
+		block logotype
+			+logo('colored')
 		.contacts
-			a(href="tel:+79213221232").contact-tel
-				span.contacts-tel__blue
-					| +7 (921)
-				| 322 12 32
+			block telephone
+				+tel('gray')
 			a(href="mailto:manager@company.com").contact-mail
 				| manager@company.com

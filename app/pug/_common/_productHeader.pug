@@ -1,6 +1,43 @@
-.header-line
+include _mixins
+header.header-line
 	.container
-		.header-line__socials
-			a(href="vk.com").header-line__link_vk
-			a(href="fb.com").header-line__link_fb
-			a(href="tw.com").header-lien__link_tw
+		.header-top
+			.small-socials
+				a(href="vk.com" class=".small-socials__link").small-socials__link_vk
+				a(href="fb.com" class=".small-socials__link").small-socials__link_fb
+				a(href="tw.com" class=".small-socials__link").small-socials__link_tw
+			.adress
+				img(src="#", alt="").adress__marker
+				span.adress__title
+					| г.Москва, ул.Новая 246, офис 214
+				block telephone
+					+tel('white')
+		.header-bot
+			block logotype
+				+logo('white')
+			form.search
+				input(type="text" name="searchValue").search__input
+				input(type="submit" name="searchSubmit" value="Поиск").search__input
+			ul.order-info
+				li.order-info__item
+					a(href="#" class="order-info__link").order-info__link_map
+						| Карта проезда
+				li.order-info__item
+					a(href="#" class="order-info__link").order-info__link_history
+						| История заказов
+				li.order-info__item
+					a(href="" class="order-info__link").order-info__link_backet
+						| Корзина
+					ul.order-info__backet
+						li.order-info-backet__item
+							img(src="", alt="").order-info-backet__img
+							a(href="").order-info-backet__link
+								| iPhone 6
+						li.order-info-backet__item
+							img(src="", alt="").order-info-backet__img
+							a(href="").order-info-backet__link
+								| iPad Air Wi-Fi + Cellular 128GB - Silver
+						li.order-info-backet__item
+							img(src="", alt="").order-info-backet__img
+							a(href="").order-info-backet__link
+								| Macbook Air

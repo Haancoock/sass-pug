@@ -1,7 +1,7 @@
 include _variables
 // navigation
-mixin mainNavigation(obj, count)
-	nav.main-navigation
+mixin mainNavigation(obj, count, style)
+	nav(class= style ? "main-navigation_" + style : '').main-navigation
 		.container
 			ul.main-navigation__list
 				-var n = 0
@@ -59,4 +59,35 @@ mixin prodList(obj)
 							span.product__stats-name= stat.name
 							span.product__stats-value= stat.value
 
+mixin tel(style)
+	a(href="tel:+79213221232" class='tel__'+ style)
+		span.tel__code
+			| +7 (921)
+		| 322 12 32
+
+mixin logo(type)
+	a(href="index.html" class= type + "-logo")
+			img(src="images/logo_" + type + ".png", alt="logo" class= type + "-logo")
+
+mixin productSlider(img)
+	.product-slider
+		img(src="images/slider-img1.png").product-slider__image
+		.product-slider__list
+			each value in img
+				img(src= value).product-slider__item
+
+mixin productInfo(obj, id)
+	.product-info
+		- var list = pList
+		- var stats = list[id].stats
+			h2.product-info__name= pList[id].title
+			.product-info__description
+				.product-info__stats
+					each stat in stats
+						.product-info__stats-wrapper
+							span.product-info__stats-name= stat.name
+							span.product-info__stats-value= stat.value
+						.product-info__stats-wrapper
+							span.product-info__stats-name= stat.name
+							span.product-info__stats-value= stat.value
 

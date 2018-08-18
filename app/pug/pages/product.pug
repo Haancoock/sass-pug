@@ -1,1 +1,12 @@
 extends ../product_main
+block title
+	title
+		| Product
+block productMenu
+	+mainNavigation(navMenu, 1, 'product')
+block breadcrumbs
+	+breadcrumbs(productCrumbs, 1)
+block productSlider
+	+productSlider(productImg)
+block productInfo
+	+productInfo(pList, 3)
