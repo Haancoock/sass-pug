@@ -91,3 +91,9 @@ mixin productInfo(obj, id)
 							span.product-info__stats-name= stat.name
 							span.product-info__stats-value= stat.value
 
+mixin gallery(obj)
+	.gallery
+		ul.gallery__list
+			each item in obj
+				li.gallery__item
+					img(src= item).gallery__img

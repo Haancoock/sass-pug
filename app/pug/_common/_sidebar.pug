@@ -1,0 +1,37 @@
+include _mixins
+
+block logo
+	+logo('colored')
+.call-order
+	h3.call-order__title
+		| Заказать звонок
+	form(action="").call-order__form
+		.call-order__item
+			span.call-order__name
+				| Ваше имя
+			input(type="text" placeholder="Константин").call-order__input
+		.call-order__item
+			span.call-order__name
+				| Телефон
+			input(type="text" placeholder="+7 (912) 000-00-00").call-order__input
+		.call-order__item
+			span.call-order__name
+				| Дата
+			select(name="date").call-order__select
+				-for(var i=1; i< 32; i++)
+					option(value="day")= i < 10 ? '0' + i : i
+			select(name="date").call-order__select
+				-for(var i=1; i< 13; i++)
+					option(value="day")= i < 10 ? '0' + i : i
+		.call-order__item
+			textarea.call-order__textarea
+		.call-order__item
+			input(type="submit" value="Отправить" name="submit").call-order__button
+			input(type="reset" value="Очистить" name="reset").call-order__button
+block gallery
+	+gallery(galleryList)
+.sidebar-contacts
+	span.sidebar-contacts__element
+		| г. Москва, ул. Новая 246, офис 214.
+	span.sidebar-contacts__element
+		| +7(921) 322-12-32
