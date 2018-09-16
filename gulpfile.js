@@ -10,7 +10,8 @@ var gulp         = require('gulp'), // Gulp
     cache        = require('gulp-cache'), // Кеширование
     autoprefixer = require('gulp-autoprefixer'),// Автоматическое добавление префиксов
     pug          = require('gulp-pug'), // Pug
-    fs           = require('fs') // Для работы с файловой системой
+    compass      = require('gulp-compass')//Compass
+    fs           = require('fs'), // Для работы с файловой системой
     plumber      = require('gulp-plumber'); //слежка за ошибками( что бы не вылетал галп)
 
 gulp.task('pug', function(){
@@ -26,7 +27,7 @@ gulp.task('pug', function(){
         .pipe(browserSync.reload({stream: true}))// Обновлять html на странице при изменении
 })
 gulp.task('sass', function(){ 
-    return gulp.src('app/sass/**/*.sass') // Источник
+    return gulp.src('app/sass/main.scss') // Источник
         .pipe(sass()) // Преобразование Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создание префиксов
         .pipe(gulp.dest('app/css')) // Сохранение результата в папку app/css
@@ -40,6 +41,15 @@ gulp.task('browser-sync', function() {
         },
         notify: true // Отключать уведомления
     });
+});
+
+gulp.task('compass', function() { // Подключеник Compass
+  gulp.src('app/sass/main.scss')
+    .pipe(compass({
+      config_file: 'app/config.rb',
+      css: 'app/css',
+      sass: 'app/sass'
+    }));
 });
 
 gulp.task('scripts', function() {
@@ -62,9 +72,10 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'scripts'], function() {
-    gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
+    gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/pug/**/*.pug', ['pug']); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
+    gulp.watch('app/sass/**/*.scss', ['compass']); // Наблюдение за scss файлами 
 });
 
 gulp.task('clean', function() {
