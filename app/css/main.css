@@ -41,7 +41,9 @@ body {
 .header {
   padding-top: 23px;
   height: 97px;
-  background-color: #dce6f0; }
+  background-image: -webkit-radial-gradient(center, circle, #f1f4f9, #d9e5ef);
+  background-image: -o-radial-gradient(center, circle, #f1f4f9, #d9e5ef);
+  background-image: radial-gradient(circle at center, #f1f4f9, #d9e5ef); }
 
 .logo {
   float: left; }
