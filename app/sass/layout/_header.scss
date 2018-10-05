@@ -1,0 +1,37 @@
+.header{
+	padding-top:23px;
+	height:97px;
+	background-color:$dark-gray;
+}
+
+.logo{
+	float:left;
+}
+
+.contacts{
+	float:right;
+	.tel__gray{
+		display: block;
+		font-size: $large-font-size;
+		color: $gray;
+		padding-bottom:2px;
+	
+		.tel__code{
+			font-size: $regular-font-size;
+			color: $blue;
+			font-weight: 700;
+			margin-right:9px;
+			vertical-align:top;
+		}
+	}
+	.contact-mail{
+		display: block;
+		font-size: $medium-font-size;
+		border-bottom: 1px solid $blue;
+		font-weight: 400;
+		&:hover{
+			color: $purple;
+			border-bottom: 1px solid $purple;
+		}
+	}
+}

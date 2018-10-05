@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+///Basic link color
+a {
+	color: $link-color;
+	text-decoration: none;
+}

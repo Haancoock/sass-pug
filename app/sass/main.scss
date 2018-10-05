@@ -16,17 +16,17 @@
 // 3. Layout
 @import
   'layout/header',
-  'layout/footer';
-  'layout/forms';
-  'layout/navigation';
+  'layout/footer',
+  'layout/forms',
+  'layout/navigation',
   'layout/sidebar';
 
 // 4. Components
 @import
-  'components/button';
+  'components/upButton';
 
 // 5. Pages
 @import
-  'pages/home';
-  'pages/product';
+  'pages/home',
+  'pages/product',
   'pages/products';
