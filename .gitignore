@@ -1,3 +1,5 @@
 node_modules/
 dist/
 yarn-error.log
+.sass-cache
+app/.sass-cache
