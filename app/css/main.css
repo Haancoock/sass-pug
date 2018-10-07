@@ -137,3 +137,23 @@ body {
 
 .upButton {
   display: none; }
+
+.breadcrumbs {
+  float: left; }
+  .breadcrumbs .breadcrumbs__list {
+    display: inline-block; }
+    .breadcrumbs .breadcrumbs__list .breadcrumbs__item {
+      display: inline; }
+      .breadcrumbs .breadcrumbs__list .breadcrumbs__item .breadcrumbs__link {
+        border-bottom: none;
+        color: #5c7b98; }
+      .breadcrumbs .breadcrumbs__list .breadcrumbs__item .breadcrumbs__link_active {
+        border-bottom: 1px solid #00b9fe;
+        color: #00b9fe; }
+      .breadcrumbs .breadcrumbs__list .breadcrumbs__item::after {
+        content: '>';
+        position: relative;
+        left: 1px;
+        font-size: 11px; }
+      .breadcrumbs .breadcrumbs__list .breadcrumbs__item:last-child::after {
+        content: none; }

@@ -1,0 +1,32 @@
+.breadcrumbs{
+	float:left;
+
+	.breadcrumbs__list{
+		display:inline-block;
+
+		.breadcrumbs__item{
+			display: inline;
+
+			.breadcrumbs__link{
+				border-bottom: none;
+				color: $regular-text-color;
+			}
+
+			.breadcrumbs__link_active{
+				border-bottom: 1px solid $blue;
+				color: $blue;
+			}
+
+			&::after{
+				content:'>';
+				position:relative;
+				left:1px;
+				font-size: 11px;
+			}
+
+			&:last-child::after{
+				content:none;
+			}
+		}
+	}
+}
