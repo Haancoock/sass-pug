@@ -20,7 +20,7 @@ mixin breadcrumbs(obj, count)
 					a(
 						class=l++ == count - 1 ? 'breadcrumbs__link_active': '' 
 						class="breadcrumbs__link" 
-						href=n++ == count -1 ? null : index)= val
+						href= n++ == count -1 ? index : null)= val
 
 mixin productListIndex(obj, count)
 	.list-index
