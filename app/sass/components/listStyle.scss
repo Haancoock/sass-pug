@@ -1,0 +1,42 @@
+.list-style-wrapper{
+	
+	float:right;
+	position:relative;
+	right:145px;
+	bottom:4px;	
+	
+	&::before{
+		content:'>';
+		position:absolute;
+		top:1px;
+		right:1px;
+		display:block;
+		height:25px;
+		width: 25px;
+		background-color:$blue;
+		color:#fff;
+		font-size:16px;
+		line-height:25px;
+		text-align: center;
+		transform:rotate(90deg);
+		z-index:-1;
+	}
+
+	.list-style{
+		width:132px;
+		height:26px;
+		padding:6px;
+		background: transparent;
+		color:$regular-text-color;
+		font-size:14px;
+		appearance:none;
+		outline:none;
+		cursor:pointer;
+		border-color:#e3e9f0;
+		
+		option{
+		
+		}
+
+	}
+}
