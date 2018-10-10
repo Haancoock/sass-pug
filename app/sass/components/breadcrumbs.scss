@@ -1,5 +1,8 @@
 .breadcrumbs{
 	float:left;
+	position:relative;
+	top:4px;
+	left:-2px;
 
 	.breadcrumbs__list{
 		display:inline-block;

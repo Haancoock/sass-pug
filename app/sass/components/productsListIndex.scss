@@ -1,13 +1,26 @@
 .list-index{
 	float:right;
 	position:relative;
-	left:145px;
+	left:132px;
+	top:8px;
+	word-spacing:4.5px;
+	
 
 	.list-index__list{
 
 
 		.list-index__item{
 			display:inline-block;
+
+			.list-index__link{
+				font-size:$regular-font-size;
+				border-bottom: 2px solid #7fdcfe;
+			}
+
+			.list-index__link_active{
+				color:$regular-text-color;
+				border-bottom:none;
+			}
 		}
 	}
 }
