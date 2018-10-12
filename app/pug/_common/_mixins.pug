@@ -38,14 +38,16 @@ mixin sidebarMenu(obj, count)
 	nav.sidebar-navigation
 		ul.sidebar-navigation__list
 			-var n = 0
+			-var l = 0
 			each index in obj
-				li(class= n++ == count -1 ? 'sidebar-navigation__item_active': '').sidebar-navigation__item= index.name
+				li(class= n++ == count -1 ? 'sidebar-navigation__item_active': '').sidebar-navigation__item
+					span(class= l++ == count -1 ? 'sidebar-navigation__product-name_active': '').sidebar-navigation__proguct-name= index.name
 					-var sub = index.submenu
 					if sub
 						ul.sidebar-navigation-submenu__list
 							each subindex in sub
 								li.sidebar-navigation-submenu__item
-									a(href= subindex.url)= subindex.name
+									a(href= subindex.url class="sidebar-navigation-submenu__link")= subindex.name
 
 mixin prodList(obj)
 	.product
