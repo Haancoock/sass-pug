@@ -3,9 +3,15 @@
 	margin-bottom:16px;
 }
 .main-navigation__list{
-	border-bottom:1px solid #dddddd;
-	width:996px;
 	
+	&::after{
+		content:'';
+		position:relative;
+		right:4px;
+		display: block;
+		width:999px;
+		border-bottom: 1px solid #dddddd;
+	}	
 
 	.main-navigation__item{
 		display:inline-block;
