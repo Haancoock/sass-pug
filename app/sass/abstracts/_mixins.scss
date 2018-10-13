@@ -22,3 +22,9 @@
 		display:block;
 	}
 }
+
+@mixin product-image($top, $left){
+	float:left;
+	margin-left:$left;
+	margin-top:$top;
+}
