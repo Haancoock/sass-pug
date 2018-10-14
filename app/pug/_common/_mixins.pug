@@ -51,17 +51,18 @@ mixin sidebarMenu(obj, count)
 
 mixin prodList(obj)
 	.products
-		each index in obj
-			div.product
-				img(src= index.url).product__image
-				.product__description
-					span.product__title= index.title
-					.product__stats
-						.product__stats-line
-							each stat in index.stats
-								span.product__stats-name= (stat.name + " ")
-								
-								span.product__stats-value= (stat.value + "")
+		-var n = 1
+			each index in obj
+				div.product
+					img(src= index.url class="product__image_"+ n++).product__image
+					.product__description
+						span.product__title= index.title
+						.product__stats
+							.product__stats-line
+								each stat in index.stats
+									span.product__stats-name= (stat.name + " ")
+									
+									span.product__stats-value= (stat.value + "")
 
 mixin tel(style)
 	a(href="tel:+79213221232" class='tel__'+ style)

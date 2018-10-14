@@ -23,8 +23,12 @@
 	}
 }
 
-@mixin product-image($top, $left){
-	float:left;
-	margin-left:$left;
-	margin-top:$top;
+
+@mixin product-image($index, $left, $top){
+	
+	.product__image_#{$index}{
+		margin-left: $left;
+		margin-top: $top;
+	}
+
 }
