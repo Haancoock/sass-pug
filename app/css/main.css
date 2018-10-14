@@ -16,6 +16,14 @@ a {
   color: #00b9fe;
   text-decoration: none; }
 
+h3 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: "Elektra Light Pro";
   src: url("../../fonts/Elektra Light Pro.otf"); }
@@ -141,59 +149,18 @@ body {
       background-color: #dce6f0;
       color: #5c7b98; }
 
-.content .products {
+.content .store-descript {
   float: right;
   width: 740px; }
-  .content .products .product {
-    border: 1px solid #dae1eb;
-    margin-bottom: 20px;
-    width: 737px;
-    height: 158px; }
-    .content .products .product::after {
-      content: "";
-      clear: both;
-      display: block; }
-    .content .products .product:hover {
-      -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-              box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-      cursor: pointer; }
-    .content .products .product .product__image {
-      float: left; }
-    .content .products .product .product__image_1 {
-      margin-left: 25px;
-      margin-top: 32px; }
-    .content .products .product .product__image_2 {
-      margin-left: 43px;
-      margin-top: 16px; }
-    .content .products .product .product__image_3 {
-      margin-left: 42px;
-      margin-top: 28px; }
-    .content .products .product .product__image_4 {
-      margin-left: 38px;
-      margin-top: 18px; }
-    .content .products .product .product__image_5 {
-      margin-left: 37px;
-      margin-top: 25px; }
-    .content .products .product .product__image_6 {
-      margin-left: 34px;
-      margin-top: 41px; }
-    .content .products .product .product__description {
-      float: right;
-      width: 443px;
-      margin-right: 102px;
-      margin-top: 32px; }
-      .content .products .product .product__description .product__title {
-        display: inline-block;
-        color: #00b9fe;
-        border-bottom: 2px solid #7fdcfe;
-        margin-bottom: 14px; }
-      .content .products .product .product__description .product__stats {
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 400; }
-
-.content .store-descript {
-  float: right; }
+  .content .store-descript .store-descript__title {
+    font-size: 25px;
+    font-weight: 700;
+    word-spacing: 2px;
+    margin-bottom: 6px; }
+  .content .store-descript .store-descript__parf {
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 20px; }
 
 .auxiliary-items {
   margin-bottom: 18px; }
@@ -317,6 +284,58 @@ body {
     .list-index .list-index__list .list-index__item .list-index__link_active {
       color: #5c7b98;
       border-bottom: none; }
+
+.products {
+  float: right;
+  width: 740px;
+  margin-bottom: 18px; }
+  .products .product {
+    border: 1px solid #dae1eb;
+    margin-bottom: 20px;
+    width: 737px;
+    height: 158px; }
+    .products .product::after {
+      content: "";
+      clear: both;
+      display: block; }
+    .products .product:hover {
+      -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
+    .products .product .product__image {
+      float: left; }
+    .products .product .product__image_1 {
+      margin-left: 25px;
+      margin-top: 32px; }
+    .products .product .product__image_2 {
+      margin-left: 43px;
+      margin-top: 16px; }
+    .products .product .product__image_3 {
+      margin-left: 42px;
+      margin-top: 28px; }
+    .products .product .product__image_4 {
+      margin-left: 38px;
+      margin-top: 18px; }
+    .products .product .product__image_5 {
+      margin-left: 37px;
+      margin-top: 25px; }
+    .products .product .product__image_6 {
+      margin-left: 34px;
+      margin-top: 41px; }
+    .products .product .product__description {
+      float: right;
+      width: 443px;
+      margin-right: 102px;
+      margin-top: 32px; }
+      .products .product .product__description .product__title {
+        display: inline-block;
+        color: #00b9fe;
+        border-bottom: 2px solid #7fdcfe;
+        margin-bottom: 14px; }
+      .products .product .product__description .product__stats {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400; }
 
 .list-style-wrapper {
   float: right;
