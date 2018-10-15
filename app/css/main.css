@@ -1,6 +1,11 @@
-html {
+html, body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  height: 100%; }
+
+.maincontent {
+  position: relative;
+  min-height: 100%; }
 
 *::before,
 *::after {
@@ -82,6 +87,13 @@ body {
       color: #613993;
       border-bottom: 1px solid #613993; }
 
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 238px; }
+
 .main-navigation {
   margin-top: -20px;
   margin-bottom: 16px; }
@@ -151,7 +163,8 @@ body {
 
 .content .store-descript {
   float: right;
-  width: 740px; }
+  width: 740px;
+  padding-bottom: 238px; }
   .content .store-descript .store-descript__title {
     font-size: 25px;
     font-weight: 700;
