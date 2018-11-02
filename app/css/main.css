@@ -328,7 +328,7 @@ body {
       cursor: pointer; }
 
 .upButton {
-  display: block;
+  display: none;
   position: absolute;
   top: 1582px;
   right: 363px;
@@ -402,54 +402,54 @@ body {
       color: #5c7b98;
       border-bottom: none; }
 
-.products {
+.productsList {
   float: right;
   width: 740px;
   margin-bottom: 18px; }
-  .products .product {
+  .productsList .productList {
     border: 1px solid #dae1eb;
     margin-bottom: 20px;
     width: 737px;
     height: 158px; }
-    .products .product::after {
+    .productsList .productList::after {
       content: "";
       clear: both;
       display: block; }
-    .products .product:hover {
+    .productsList .productList:hover {
       -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
               box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
       cursor: pointer; }
-    .products .product .product__image {
+    .productsList .productList .productList__image {
       float: left; }
-    .products .product .product__image_1 {
+    .productsList .productList .product__image_1 {
       margin-left: 25px;
       margin-top: 32px; }
-    .products .product .product__image_2 {
+    .productsList .productList .product__image_2 {
       margin-left: 43px;
       margin-top: 16px; }
-    .products .product .product__image_3 {
+    .productsList .productList .product__image_3 {
       margin-left: 42px;
       margin-top: 28px; }
-    .products .product .product__image_4 {
+    .productsList .productList .product__image_4 {
       margin-left: 38px;
       margin-top: 18px; }
-    .products .product .product__image_5 {
+    .productsList .productList .product__image_5 {
       margin-left: 37px;
       margin-top: 25px; }
-    .products .product .product__image_6 {
+    .productsList .productList .product__image_6 {
       margin-left: 34px;
       margin-top: 41px; }
-    .products .product .product__description {
+    .productsList .productList .productList__description {
       float: right;
       width: 443px;
       margin-right: 102px;
       margin-top: 32px; }
-      .products .product .product__description .product__title {
+      .productsList .productList .productList__description .productList__title {
         display: inline-block;
         color: #00b9fe;
         border-bottom: 2px solid #7fdcfe;
         margin-bottom: 14px; }
-      .products .product .product__description .product__stats {
+      .productsList .productList .productList__description .productList__stats {
         font-size: 14px;
         line-height: 20px;
         font-weight: 400; }

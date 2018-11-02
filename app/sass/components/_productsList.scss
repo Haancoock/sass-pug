@@ -1,9 +1,9 @@
-.products{
+.productsList{
 		float:right;
 		width: 740px;
 		margin-bottom:18px;
 
-		.product{
+		.productList{
 			border:1px solid #dae1eb;
 			@include clearfix;
 			margin-bottom:20px;
@@ -15,7 +15,7 @@
 				cursor: pointer;
 			}
 			
-			.product__image{
+			.productList__image{
 				float:left;
 			}
 
@@ -27,20 +27,20 @@
 			@include product-image(6, 34px, 41px);
 
 
-			.product__description{
+			.productList__description{
 				float:right;
 				width:443px;
 				margin-right:102px;
 				margin-top:32px;
 
-				.product__title{
+				.productList__title{
 					display:inline-block;
 					color:$blue;
 					border-bottom:2px solid $light-blue;
 					margin-bottom:14px;
 				}
 
-				.product__stats{
+				.productList__stats{
 					font-size:14px;
 					line-height:20px;
 					font-weight:400;
