@@ -459,6 +459,8 @@ body {
         font-size: 14px;
         line-height: 20px;
         font-weight: 400; }
+        .productsList .productList .productList__description .productList__stats .productList__stats-line {
+          display: inline; }
 
 .productsGrid {
   float: right;
