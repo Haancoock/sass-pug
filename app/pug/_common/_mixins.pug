@@ -50,19 +50,19 @@ mixin sidebarMenu(obj, count)
 									a(href= subindex.url class="sidebar-navigation-submenu__link")= subindex.name
 
 mixin prodList(obj)
-	.productsList
+	.productsGrid
 		-var n = 1
 			each index in obj
-				div.productList
-					img(src= index.url class="product__image_"+ n++).productList__image
-					.productList__description
-						span.productList__title= index.title
-						.productList__stats
-							.productList__stats-line
+				div.productGrid
+					img(src= index.url class="product__image_"+ n++).productGrid__image
+					.productGrid__description
+						span.productGrid__title= index.title
+						.productGrid__stats
+							.productGrid__stats-line
 								each stat in index.stats
-									span.productList__stats-name= (stat.name + " ")
+									span.productGrid__stats-name= (stat.name + " ")
 									
-									span.productList__stats-value= (stat.value + "")
+									span.productGrid__stats-value= (stat.value + "")
 
 mixin tel(style)
 	a(href="tel:+79213221232" class='tel__'+ style)
