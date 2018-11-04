@@ -24,11 +24,12 @@
 }
 
 
-@mixin product-image($index, $left, $top){
+@mixin product-image($index, $left, $top, $bottom: 0){
 	
 	.product__image_#{$index}{
 		margin-left: $left;
 		margin-top: $top;
+		margin-bottom: $bottom;
 	}
 
 }

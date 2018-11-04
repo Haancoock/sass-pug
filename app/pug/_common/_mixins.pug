@@ -58,8 +58,8 @@ mixin prodList(obj)
 					.productGrid__description
 						span.productGrid__title= index.title
 						.productGrid__stats
-							.productGrid__stats-line
-								each stat in index.stats
+							each stat in index.stats
+								.productGrid__stats-line
 									span.productGrid__stats-name= (stat.name + " ")
 									
 									span.productGrid__stats-value= (stat.value + "")
