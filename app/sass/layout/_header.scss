@@ -10,20 +10,8 @@
 
 .contacts{
 	float:right;
-	.tel__gray{
-		display: block;
-		font-size: $large-font-size;
-		color: $gray;
-		padding-bottom:2px;
-	
-		.tel__code{
-			font-size: $regular-font-size;
-			color: $blue;
-			font-weight: 700;
-			margin-right:9px;
-			vertical-align:top;
-		}
-	}
+	@include telephone("gray", $gray);
+
 	.contact-mail{
 		display: block;
 		font-size: $medium-font-size;
@@ -33,5 +21,69 @@
 			color: $purple;
 			border-bottom: 1px solid $purple;
 		}
+	}
+}
+
+.header-line{
+
+	.header-top{
+		background-color:#45626e;
+		padding-top:8px;
+		padding-bottom:2px;
+
+		.small-socials{
+			margin-left:-2px;
+			float: left;
+
+			.small-socials__link_vk{
+				background-image: url(../images/small-socials.png);
+			}
+
+			.small-socials__link_fb{
+				background-image: url(../images/small-socials.png);
+				background-position: 57px 0px;
+			}
+
+			.small-socials__link_tw{
+				background-image: url(../images/small-socials.png);
+				background-position:114px 0px;
+			}
+
+			.small-socials__link{
+				margin-left:5px;
+				display: inline-block;
+				width:26px;
+				height:26px;
+
+				&:first-child{
+					margin-left:0;
+				}
+			}
+		}
+		
+		.adress{
+			@include clearfix;
+			float: right;
+			@include telephone("white", $white);
+
+			.adress__marker{
+				margin-right:10px;
+				float:left;
+			}
+
+			.adress__title{
+				float:left;
+				display: inline-block;
+				vertical-align: top;
+				line-height: 25px;
+				color:$white;
+				font-size:13px;
+				margin-right:188px;
+			}
+		}
+	}
+
+	.header-bot{
+
 	}
 }

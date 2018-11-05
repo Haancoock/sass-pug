@@ -33,3 +33,21 @@
 	}
 
 }
+
+@mixin telephone($colorName, $color){
+	.tel__#{$colorName}{
+		display: block;
+		font-size: $large-font-size;
+		color: $color;
+		padding-bottom:2px;
+		float:right;
+	
+		.tel__code{
+			font-size: $regular-font-size;
+			color: $blue;
+			font-weight: 700;
+			margin-right:9px;
+			vertical-align:top;
+		}
+	}
+}

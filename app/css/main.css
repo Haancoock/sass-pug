@@ -72,7 +72,8 @@ body {
     display: block;
     font-size: 25px;
     color: #5c7b98;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    float: right; }
     .contacts .tel__gray .tel__code {
       font-size: 15px;
       color: #00b9fe;
@@ -87,6 +88,58 @@ body {
     .contacts .contact-mail:hover {
       color: #613993;
       border-bottom: 1px solid #613993; }
+
+.header-line .header-top {
+  background-color: #45626e;
+  padding-top: 8px;
+  padding-bottom: 2px; }
+  .header-line .header-top .small-socials {
+    margin-left: -2px;
+    float: left; }
+    .header-line .header-top .small-socials .small-socials__link_vk {
+      background-image: url(../images/small-socials.png); }
+    .header-line .header-top .small-socials .small-socials__link_fb {
+      background-image: url(../images/small-socials.png);
+      background-position: 57px 0px; }
+    .header-line .header-top .small-socials .small-socials__link_tw {
+      background-image: url(../images/small-socials.png);
+      background-position: 114px 0px; }
+    .header-line .header-top .small-socials .small-socials__link {
+      margin-left: 5px;
+      display: inline-block;
+      width: 26px;
+      height: 26px; }
+      .header-line .header-top .small-socials .small-socials__link:first-child {
+        margin-left: 0; }
+  .header-line .header-top .adress {
+    float: right; }
+    .header-line .header-top .adress::after {
+      content: "";
+      clear: both;
+      display: block; }
+    .header-line .header-top .adress .tel__white {
+      display: block;
+      font-size: 25px;
+      color: #ffffff;
+      padding-bottom: 2px;
+      float: right; }
+      .header-line .header-top .adress .tel__white .tel__code {
+        font-size: 15px;
+        color: #00b9fe;
+        font-weight: 700;
+        margin-right: 9px;
+        vertical-align: top; }
+    .header-line .header-top .adress .adress__marker {
+      margin-right: 10px;
+      float: left; }
+    .header-line .header-top .adress .adress__title {
+      float: left;
+      display: inline-block;
+      vertical-align: top;
+      line-height: 25px;
+      color: #ffffff;
+      font-size: 13px;
+      margin-right: 188px; }
 
 .footer {
   position: absolute;
