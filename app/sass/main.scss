@@ -19,17 +19,18 @@
   'layout/footer',
   'layout/forms',
   'layout/navigation',
-  'layout/_mainContent.scss',
-  'layout/_auxiliary.scss',
+  'layout/mainContent',
+  'layout/auxiliary',
+  'layout/storeDescript',
   'layout/sidebar';
 
 // 4. Components
 @import
   'components/upButton',
   'components/breadcrumbs',
-  'components/productsListIndex.scss',
-  'components/_productsList.scss',
-  'components/listStyle.scss';
+  'components/productsListIndex',
+  'components/productsList',
+  'components/listStyle';
 
 // 5. Pages
 @import

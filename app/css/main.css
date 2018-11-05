@@ -231,22 +231,22 @@ body {
       background-color: #dce6f0;
       color: #5c7b98; }
 
-.content .store-descript {
+.auxiliary-items {
+  margin-bottom: 18px; }
+
+.store-descript {
   float: right;
   width: 740px;
   padding-bottom: 295px; }
-  .content .store-descript .store-descript__title {
+  .store-descript .store-descript__title {
     font-size: 25px;
     font-weight: 700;
     word-spacing: 2px;
     margin-bottom: 6px; }
-  .content .store-descript .store-descript__parf {
+  .store-descript .store-descript__parf {
     line-height: 20px;
     font-size: 15px;
     margin-bottom: 20px; }
-
-.auxiliary-items {
-  margin-bottom: 18px; }
 
 .sidebar-navigation {
   float: left;
