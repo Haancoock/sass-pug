@@ -84,6 +84,156 @@
 	}
 
 	.header-bot{
+		padding-top:24px;
+		padding-bottom:17px;
+		background-image: radial-gradient(circle at center, $light-gray, $dark-gray);
 
+		.colored-logo{
+			float:left;
+		}
+
+		.search{
+			@include clearfix;
+			float:left;
+			margin-left:60px;
+			padding-top:10px;
+
+			.search__input_text{
+				display: block;
+				float: left;
+				width: 249px;
+				height: 31px;
+				border: 1px solid $ultra-dark-gray;
+				padding-left:10px;
+
+				&:focus{
+					outline: none;
+				}
+
+				&::placeholder{
+					color: $ultra-dark-gray;
+				}
+			}
+			
+			.search__input_submit{
+				float:right;
+				display: block;
+				height:35px;
+				width:80px;
+				margin-left: -2px;
+				border:none;
+				padding:0 0 0 0;
+				background-color: $blue;
+				color: $white;
+				font-size: 17px;
+				font-weight: 700;
+
+				&:focus{
+					outline: none;
+				}
+			}
+
+		}
+
+		.order-info{
+			float:right;
+			@include clearfix;
+			width:377px;
+
+			.order-info__item{
+				float:left;
+				display: block;
+				font-size: 13px;
+				margin-right:20px;
+				padding-top:20px;
+
+				.order-info__link{
+					border-bottom:1px solid $blue;
+					&:hover{
+						color: #613993;
+						border-color:#8b71b1;
+
+					}
+				}
+
+			}
+			.order-info__item_backet{
+					border:1px solid #dce6f0;
+					margin-top:4px;
+					margin-right:0;
+					float:right;
+					width: 137px;
+					height:29px;
+					padding-top:11px;
+					background-color:$white;
+					cursor: pointer;
+					
+					&:hover{
+						background-color:$white;
+					}
+					&:before{
+						display: inline-block;
+						content: '';
+						width:20px;
+						height:17px;
+						background-image: url('../images/backet.png');
+						margin-left:11px;
+		
+					}
+					.order-info__link_backet{
+						display:inline-block;
+						margin-left:18px;
+						vertical-align: top;
+						margin-top:3px;
+						color: #5c7b98;
+						border-color: #8ea4b8;
+					}
+
+					&:hover > .order-info__backet{
+							display: block;
+						}
+
+
+					.order-info__backet{
+						display:none;
+						position: relative;
+						z-index: 1;
+						margin-top:8px;
+						width:246px;
+						float:right;
+						margin-right:-1px;
+						@include clearfix;
+
+						.order-info-backet__item{
+							height: 75px;
+							background-color:$white;
+							border:1px solid #dce6f0;
+							border-bottom: none;
+
+							&:last-child{
+								border-bottom: 1px solid #dce6f0;
+							}
+
+							&:nth-child(2n){
+								background-color: #f8fafb;
+							}
+
+							@include backet-image(1, 24px, 13px);
+							@include backet-image(2, 8px, 12px);
+							@include backet-image(3, 13px, 17px);
+							
+							.order-info-backet__link{
+								width:136px;
+								display: inline-block;
+								float: right;
+								margin-right:25px;
+								margin-top:23px;
+								line-height: 18px;
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+		}
 	}
 }

@@ -31,7 +31,15 @@
 		margin-top: $top;
 		margin-bottom: $bottom;
 	}
+}
 
+@mixin backet-image($index, $left, $top){
+
+	.order-info-backet__img_#{$index}{
+		margin-left: $left;
+		margin-top: $top;
+		float:left;
+	}
 }
 
 @mixin telephone($colorName, $color){

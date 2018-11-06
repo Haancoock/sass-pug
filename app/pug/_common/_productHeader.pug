@@ -15,10 +15,11 @@ header.header-line
 		.header-bot
 			.container
 				block logotype
-					+logo('white')
+					+logo('colored')
 				form.search
-					input(type="text" name="searchValue").search__input
-					input(type="submit" name="searchSubmit" value="Поиск").search__input
+					input(type="text" name="searchValue" placeholder="iMac 27 Дюймов").search__input_text
+					button(type="submit" name="searchSubmit").search__input_submit
+						| Поиск
 				ul.order-info
 					li.order-info__item
 						a(href="#" class="order-info__link").order-info__link_map
@@ -26,19 +27,19 @@ header.header-line
 					li.order-info__item
 						a(href="#" class="order-info__link").order-info__link_history
 							| История заказов
-					li.order-info__item
+					li(class="order-info__item_backet").order-info__item
 						a(href="" class="order-info__link").order-info__link_backet
-							| Корзина
+							| Корзина (3)
 						ul.order-info__backet
 							li.order-info-backet__item
-								img(src="", alt="").order-info-backet__img
+								img(class="order-info-backet__img_1" src="../images/iphone6_backet.png", alt="").order-info-backet__img
 								a(href="").order-info-backet__link
 									| iPhone 6
 							li.order-info-backet__item
-								img(src="", alt="").order-info-backet__img
+								img(class="order-info-backet__img_2" src="../images/ipadAir_backet.png", alt="").order-info-backet__img
 								a(href="").order-info-backet__link
 									| iPad Air Wi-Fi + Cellular 128GB - Silver
 							li.order-info-backet__item
-								img(src="", alt="").order-info-backet__img
+								img(class="order-info-backet__img_3" src="../images/macBook_backet.png", alt="").order-info-backet__img
 								a(href="").order-info-backet__link
 									| Macbook Air
