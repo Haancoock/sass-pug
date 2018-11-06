@@ -187,7 +187,8 @@ body {
       background-color: #00b9fe;
       color: #ffffff;
       font-size: 17px;
-      font-weight: 700; }
+      font-weight: 700;
+      cursor: pointer; }
       .header-line .header-bot .search .search__input_submit:focus {
         outline: none; }
   .header-line .header-bot .order-info {
