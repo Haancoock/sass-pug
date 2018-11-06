@@ -422,6 +422,13 @@ body {
       background-color: #dce6f0;
       color: #5c7b98; }
 
+.main-navigation_product {
+  margin-top: 0;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dddddd; }
+  .main-navigation_product .main-navigation__list:after {
+    border-bottom: none; }
+
 .auxiliary-items {
   margin-bottom: 18px; }
 

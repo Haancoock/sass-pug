@@ -91,3 +91,17 @@
 		}
 	}
 }
+
+.main-navigation_product{
+	margin-top:0;
+	background-color: $ultra-light-gray;
+	border-bottom: 1px solid #dddddd;
+
+	.main-navigation__list{
+
+		&:after{
+			border-bottom: none;
+		}
+	}
+
+}
