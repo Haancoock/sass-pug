@@ -18,9 +18,9 @@ mixin breadcrumbs(obj, count)
 			each val, index in obj
 				li.breadcrumbs__item
 					a(
-						class=l++ == count - 1 ? 'breadcrumbs__link_active': '' 
+						class=l++ == count - 1 ? '': 'breadcrumbs__link_active' 
 						class="breadcrumbs__link" 
-						href= n++ == count -1 ? index : null)= val
+						href= n++ == count -1 ? null : index)= val
 
 mixin productListIndex(obj, count)
 	.list-index
