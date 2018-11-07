@@ -748,6 +748,68 @@ body {
             clear: both;
             display: block; }
 
+.product-slider {
+  float: left;
+  padding-top: 15px;
+  overflow: hidden; }
+  .product-slider::after {
+    content: "";
+    clear: both;
+    display: block; }
+  .product-slider .product-slider__list::after {
+    content: "";
+    clear: both;
+    display: block; }
+  .product-slider .product-slider__list .product-slider__button {
+    height: 23px;
+    width: 15px;
+    margin-top: 22px;
+    background: #d0e4f3;
+    color: #ffffff;
+    font-weight: 700;
+    padding-top: 11px;
+    cursor: pointer; }
+    .product-slider .product-slider__list .product-slider__button:hover {
+      background-color: #00b9fe; }
+  .product-slider .product-slider__list .product-slider-button__left {
+    float: left;
+    margin-right: 4px;
+    margin-left: 7px; }
+    .product-slider .product-slider__list .product-slider-button__left:hover::after {
+      border-right-color: #00b9fe; }
+    .product-slider .product-slider__list .product-slider-button__left:after {
+      content: '';
+      display: block;
+      border: 17px solid transparent;
+      border-right: 7px solid #d0e4f3;
+      position: relative;
+      right: 24px;
+      top: -28px; }
+  .product-slider .product-slider__list .product-slider-button__right {
+    float: right;
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 10px; }
+    .product-slider .product-slider__list .product-slider-button__right:hover::after {
+      border-left-color: #00b9fe; }
+    .product-slider .product-slider__list .product-slider-button__right:after {
+      content: '';
+      display: block;
+      border: 17px solid transparent;
+      border-left: 7px solid #d0e4f3;
+      position: relative;
+      left: 10px;
+      top: -28px; }
+  .product-slider .product-slider__list .product-slider-image__wrapper {
+    float: left; }
+    .product-slider .product-slider__list .product-slider-image__wrapper .product-slider__item {
+      margin-left: 9px; }
+      .product-slider .product-slider__list .product-slider-image__wrapper .product-slider__item:first-child {
+        margin-left: 0; }
+  .product-slider .product-slider__image {
+    margin-bottom: 9px;
+    padding-left: 2px; }
+
 .list-style-wrapper {
   float: right;
   position: relative;

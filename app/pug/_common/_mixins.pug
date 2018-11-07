@@ -78,8 +78,13 @@ mixin productSlider(img)
 	.product-slider
 		img(src="images/slider-img1.png").product-slider__image
 		.product-slider__list
-			each value in img
-				img(src= value).product-slider__item
+			div(class="product-slider-button__left").product-slider__button
+				| <
+			.product-slider-image__wrapper
+				each value in img
+					img(src= value).product-slider__item
+			div(class="product-slider-button__right").product-slider__button
+				| >
 
 mixin productInfo(obj, id)
 	.product-info
