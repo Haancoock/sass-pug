@@ -429,6 +429,15 @@ body {
   .main-navigation_product .main-navigation__list:after {
     border-bottom: none; }
 
+.content .left-content {
+  float: left;
+  width: 230px;
+  margin-top: 38px; }
+
+.content .right-content {
+  float: right;
+  margin-top: 38px; }
+
 .auxiliary-items {
   margin-bottom: 18px; }
 
