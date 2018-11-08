@@ -21,7 +21,7 @@ a {
   color: #00b9fe;
   text-decoration: none; }
 
-h3 {
+h1, h2, h3 {
   margin: 0;
   padding: 0; }
 
@@ -809,6 +809,15 @@ body {
   .product-slider .product-slider__image {
     margin-bottom: 9px;
     padding-left: 2px; }
+
+.product-info {
+  float: right;
+  margin-right: 227px; }
+  .product-info .product-info__name {
+    font-size: 26px;
+    padding-top: 7px;
+    font-weight: 700;
+    color: #00b9fe; }
 
 .list-style-wrapper {
   float: right;
