@@ -16,7 +16,7 @@ block logo
 			input(type="text" placeholder="+7 (912) 000-00-00").call-order__input
 		.call-order__item
 			span.call-order__name
-				| Дата
+				| Дата звонка
 			select(name="date").call-order__select
 				-for(var i=1; i< 32; i++)
 					option(value="day")= i < 10 ? '0' + i : i

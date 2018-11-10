@@ -2,8 +2,9 @@
 	
 	.left-content{
 		float: left;
-		width: 230px;
+		width: 229px;
 		margin-top:38px;
+		@include clearfix;
 	}
 
 	.right-content{
