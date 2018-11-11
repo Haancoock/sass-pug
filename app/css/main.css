@@ -944,19 +944,85 @@ body {
           font-size: 12px;
           padding-left: 5px;
           margin-top: 17px; }
-      .call-order .call-order__form .call-order__item .call-order__select {
+      .call-order .call-order__form .call-order__item .select-wrapper {
         float: right;
+        position: relative;
         background-color: #fff;
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
-        width: 49px;
-        height: 26px;
-        border: 1px solid  #dae1eb;
-        font-size: 12px;
-        color: #5c7b98; }
-        .call-order .call-order__form .call-order__item .call-order__select:last-child {
+        cursor: pointer; }
+        .call-order .call-order__form .call-order__item .select-wrapper:last-child {
           margin-right: 12px; }
+        .call-order .call-order__form .call-order__item .select-wrapper:before {
+          content: '>';
+          position: absolute;
+          top: 1px;
+          right: 1px;
+          display: block;
+          font-weight: 700;
+          height: 24px;
+          width: 24px;
+          background-color: #00b9fe;
+          color: #fff;
+          font-size: 16px;
+          line-height: 25px;
+          text-align: center;
+          -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+                  transform: rotate(90deg);
+          z-index: 1; }
+        .call-order .call-order__form .call-order__item .select-wrapper .call-order__select {
+          float: right;
+          background-color: transparent;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          width: 49px;
+          height: 26px;
+          border: 1px solid  #dae1eb;
+          font-size: 12px;
+          color: #dae1eb;
+          outline: none;
+          padding-left: 5px;
+          cursor: pointer; }
+          .call-order .call-order__form .call-order__item .select-wrapper .call-order__select option:not(:checked) {
+            color: #5c7b98; }
+      .call-order .call-order__form .call-order__item .call-order__textarea {
+        width: 197px;
+        height: 56px;
+        border: 1px solid #dae1eb;
+        resize: none;
+        outline: none;
+        padding-left: 8px;
+        padding-top: 9px;
+        color: #5c7b98; }
+        .call-order .call-order__form .call-order__item .call-order__textarea::-webkit-input-placeholder {
+          color: #dae1eb;
+          font-size: 12px; }
+        .call-order .call-order__form .call-order__item .call-order__textarea::-moz-placeholder {
+          color: #dae1eb;
+          font-size: 12px; }
+        .call-order .call-order__form .call-order__item .call-order__textarea:-ms-input-placeholder {
+          color: #dae1eb;
+          font-size: 12px; }
+        .call-order .call-order__form .call-order__item .call-order__textarea::-ms-input-placeholder {
+          color: #dae1eb;
+          font-size: 12px; }
+        .call-order .call-order__form .call-order__item .call-order__textarea::placeholder {
+          color: #dae1eb;
+          font-size: 12px; }
+      .call-order .call-order__form .call-order__item .call-order__button {
+        width: 90px;
+        height: 35px;
+        background-color: #00b9fe;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        margin-top: -5px;
+        outline: none;
+        cursor: pointer; }
+        .call-order .call-order__form .call-order__item .call-order__button:last-child {
+          background-color: #dae1eb;
+          margin-left: 25px; }
 
 .list-style-wrapper {
   float: right;
