@@ -6,6 +6,7 @@
 	padding-top:14px;
 	padding-left:10px;
 	width: 219px;
+	margin-bottom:14px;
 
 	.call-order__title{
 		font-size: 25px;
@@ -20,7 +21,7 @@
 
 		.call-order__item{
 			@include clearfix;
-			margin-bottom: 15px;
+			margin-bottom: 16px;
 
 			.call-order__name{
 				float: left;
@@ -37,7 +38,7 @@
 				height: 20px;
 				padding-left:5px;
 				font-size: 12px;
-				border:2px solid #e1e6ef;
+				border:1px solid #e1e6ef;
 				outline: none;
 
 				&::placeholder{

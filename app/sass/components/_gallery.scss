@@ -1,0 +1,18 @@
+.gallery{
+	float: left;
+	@include clearfix;
+
+	.gallery__list{
+		@include clearfix;
+		
+		.gallery__item{
+			float: left;
+			margin-left: 9px;
+			margin-bottom:5px;
+
+			&:nth-child(3n + 1){
+				margin-left: 0;
+			}
+		}
+	}
+}
