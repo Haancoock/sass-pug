@@ -1,6 +1,7 @@
 .gallery{
 	float: left;
 	@include clearfix;
+	margin-bottom:20px;
 
 	.gallery__list{
 		@include clearfix;

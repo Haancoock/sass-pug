@@ -1025,7 +1025,8 @@ body {
           margin-left: 25px; }
 
 .gallery {
-  float: left; }
+  float: left;
+  margin-bottom: 20px; }
   .gallery::after {
     content: "";
     clear: both;
@@ -1040,6 +1041,44 @@ body {
     margin-bottom: 5px; }
     .gallery .gallery__list .gallery__item:nth-child(3n + 1) {
       margin-left: 0; }
+
+.sidebar-contacts {
+  float: left;
+  background-color: #f4f6f9;
+  padding-top: 19px;
+  padding-left: 41px;
+  padding-bottom: 16px; }
+  .sidebar-contacts::after {
+    content: "";
+    clear: both;
+    display: block; }
+  .sidebar-contacts .sidebar-contacts__element {
+    display: block;
+    float: left;
+    font-size: 14.5px;
+    line-height: 20.5px;
+    position: relative; }
+    .sidebar-contacts .sidebar-contacts__element:first-child {
+      margin-bottom: 10px; }
+    .sidebar-contacts .sidebar-contacts__element:first-child::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 22px;
+      position: absolute;
+      left: -18px;
+      top: -4px;
+      background-image: url("../images/sidebarLocation.png"); }
+    .sidebar-contacts .sidebar-contacts__element:last-child::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 22px;
+      position: absolute;
+      left: -18px;
+      top: -4px;
+      background-image: url("../images/sidebarTel.png");
+      background-repeat: no-repeat; }
 
 .list-style-wrapper {
   float: right;

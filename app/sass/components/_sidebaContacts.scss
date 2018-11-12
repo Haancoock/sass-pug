@@ -1,0 +1,43 @@
+.sidebar-contacts{
+	float: left;
+	@include clearfix;
+	background-color: #f4f6f9;
+	padding-top:19px;
+	padding-left:41px;
+	padding-bottom: 16px;
+
+	.sidebar-contacts__element{
+		display: block;
+		float: left;
+		font-size: 14.5px;
+		line-height: 20.5px;
+		position: relative;
+		
+		&:first-child{
+			margin-bottom:10px;
+		}
+
+		&:first-child::before{
+			content: '';
+			display: block;
+			width: 16px;
+			height: 22px;
+			position: absolute;
+			left: -18px;
+			top:-4px;
+			background-image: url('../images/sidebarLocation.png');
+		}
+
+		&:last-child::before{
+			content: '';
+			display: block;
+			width: 16px;
+			height: 22px;
+			position: absolute;
+			left: -18px;
+			top:-4px;
+			background-image: url('../images/sidebarTel.png');
+			background-repeat: no-repeat;
+		}
+	}
+}
