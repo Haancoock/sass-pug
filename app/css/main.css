@@ -899,7 +899,8 @@ body {
     margin-right: 10px;
     font-size: 14px; }
     .call-order .call-order__form .call-order__item {
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      position: relative; }
       .call-order .call-order__form .call-order__item::after {
         content: "";
         clear: both;
@@ -944,31 +945,57 @@ body {
           font-size: 12px;
           padding-left: 5px;
           margin-top: 17px; }
+      .call-order .call-order__form .call-order__item .select-arrow_r {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        display: block;
+        font-weight: 700;
+        height: 24px;
+        width: 24px;
+        background-color: #00b9fe;
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
+        .call-order .call-order__form .call-order__item .select-arrow_r:after {
+          content: '';
+          display: block;
+          width: 24px;
+          height: 23px;
+          background-color: #ffffff; }
+      .call-order .call-order__form .call-order__item .select-arrow_l {
+        position: absolute;
+        top: 1px;
+        right: 62px;
+        display: block;
+        font-weight: 700;
+        height: 24px;
+        width: 24px;
+        background-color: #00b9fe;
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
+        .call-order .call-order__form .call-order__item .select-arrow_l:after {
+          content: '';
+          display: block;
+          width: 24px;
+          height: 23px;
+          background-color: #ffffff; }
       .call-order .call-order__form .call-order__item .select-wrapper {
         float: right;
         position: relative;
-        background-color: #fff;
+        background-color: transparent;
         cursor: pointer; }
         .call-order .call-order__form .call-order__item .select-wrapper:last-child {
           margin-right: 12px; }
-        .call-order .call-order__form .call-order__item .select-wrapper:before {
-          content: '>';
-          position: absolute;
-          top: 1px;
-          right: 1px;
-          display: block;
-          font-weight: 700;
-          height: 24px;
-          width: 24px;
-          background-color: #00b9fe;
-          color: #fff;
-          font-size: 16px;
-          line-height: 25px;
-          text-align: center;
-          -webkit-transform: rotate(90deg);
-              -ms-transform: rotate(90deg);
-                  transform: rotate(90deg);
-          z-index: 1; }
         .call-order .call-order__form .call-order__item .select-wrapper .call-order__select {
           float: right;
           background-color: transparent;

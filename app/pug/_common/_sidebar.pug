@@ -17,6 +17,10 @@ block logo
 		.call-order__item
 			span.call-order__name
 				| Дата звонка
+			.select-arrow_l
+				| >
+			.select-arrow_r
+				| >
 			.select-wrapper
 				select(name="date").call-order__select
 					-for(var i=1; i< 32; i++)

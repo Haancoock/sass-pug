@@ -22,6 +22,7 @@
 		.call-order__item{
 			@include clearfix;
 			margin-bottom: 16px;
+			position: relative;
 
 			.call-order__name{
 				float: left;
@@ -49,17 +50,7 @@
 				}
 			}
 			
-			.select-wrapper{
-				float: right;
-				position: relative;
-				background-color:#fff;
-				cursor: pointer;
-				
-				&:last-child{
-					margin-right: 12px;
-				}
-				&:before{
-					content:'>';
+			.select-arrow_r{
 					position:absolute;
 					top:1px;
 					right:1px;
@@ -73,10 +64,49 @@
 					line-height:25px;
 					text-align: center;
 					transform:rotate(90deg);
-					z-index: 1;
-					
-				}
+
+					&:after{
+						content: '';
+						display: block;
+						width: 24px;
+						height: 23px;
+						background-color: $white;
+					}
+			}
+			.select-arrow_l{
+					position:absolute;
+					top:1px;
+					right:62px;
+					display:block;
+					font-weight: 700;
+					height:24px;
+					width: 24px;
+					background-color:$blue;
+					color:#fff;
+					font-size:16px;
+					line-height:25px;
+					text-align: center;
+					transform:rotate(90deg);
+
+					&:after{
+						content: '';
+						display: block;
+						width: 24px;
+						height: 23px;
+						background-color: $white;
+					}
+			}
+
+			.select-wrapper{
+				float: right;
+				position: relative;
+				background-color: transparent;
+				cursor: pointer;
 				
+				&:last-child{
+					margin-right: 12px;
+				}
+
 				.call-order__select{
 					float: right;
 					background-color: transparent;
