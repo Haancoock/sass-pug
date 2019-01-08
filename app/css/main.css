@@ -274,8 +274,8 @@ body {
             width: 136px;
             display: inline-block;
             float: right;
-            margin-right: 25px;
-            margin-top: 23px;
+            padding-right: 25px;
+            padding-top: 23px;
             line-height: 18px;
             text-decoration: underline; }
 
