@@ -1141,3 +1141,6 @@ body {
     outline: none;
     cursor: pointer;
     border-color: #e3e9f0; }
+
+.left-content {
+  margin-left: -2px; }
