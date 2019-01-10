@@ -63,6 +63,7 @@
 		.productGrid{
 			display: block;
 			float:left;
+			color: $gray;
 			border:1px solid #dae1eb;
 			@include clearfix;
 			margin-bottom:24px;

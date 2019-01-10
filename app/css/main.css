@@ -708,6 +708,7 @@ body {
   .productsGrid .productGrid {
     display: block;
     float: left;
+    color: #5c7b98;
     border: 1px solid #dae1eb;
     margin-bottom: 24px;
     width: 228px;
