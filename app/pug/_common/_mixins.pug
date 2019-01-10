@@ -53,7 +53,7 @@ mixin prodList(obj, style)
 	div(class="products"+ style)
 		-var n = 1
 			each index in obj
-				div(class="product"+ style)
+				a(href="" class="product"+ style)
 					img(src= index.url class="product__image_"+ n++ class="product"+style+"__image")
 					div(class="product"+style+"__description")
 						span(class="product"+style+"__title")= index.title
