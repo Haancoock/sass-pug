@@ -113,10 +113,10 @@ mixin mainProducts(obj, title)
 	.main-products
 		h2.main-products__block-title= title
 		ul.main-products__list
-			li.main-products__item
-				each index in obj
+			each index in obj
+				li.main-products__item
 					img(src= index.img).main-products__img
-					span.main-products__title
+					span.main-products__title=index.name
 					.main-products__stats
 						each stat in index.stats
 							span.main-products__stats-name= stat.name
