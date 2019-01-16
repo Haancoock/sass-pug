@@ -439,7 +439,12 @@ body {
 
 .content .right-content {
   float: right;
-  margin-top: 38px; }
+  margin-top: 38px;
+  margin-right: 3px; }
+  .content .right-content::after {
+    content: "";
+    clear: both;
+    display: block; }
 
 .auxiliary-items {
   margin-bottom: 18px; }
@@ -1107,6 +1112,86 @@ body {
       top: -4px;
       background-image: url("../images/sidebarTel.png");
       background-repeat: no-repeat; }
+
+.main-slider {
+  position: relative;
+  height: 300px;
+  width: 740px; }
+  .main-slider::after {
+    content: "";
+    clear: both;
+    display: block; }
+  .main-slider .slide__button {
+    position: absolute;
+    top: 103px;
+    font-style: "Elektra Light Pro", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #5c7b98;
+    padding-top: 4px;
+    background-color: #f7f7f7;
+    height: 34px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    z-index: 10; }
+    .main-slider .slide__button:hover {
+      background-color: #00b9fe;
+      color: #ffffff; }
+    .main-slider .slide__button:hover:before {
+      border-right-color: #00b9fe; }
+    .main-slider .slide__button:hover:after {
+      border-left-color: #00b9fe; }
+  .main-slider .prev-button {
+    left: 17px;
+    padding-right: 11px; }
+    .main-slider .prev-button:before {
+      content: '';
+      display: block;
+      height: 34px;
+      width: 15px;
+      border-top: 18px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-right: 7px solid #f7f7f7;
+      position: absolute;
+      top: 0px;
+      left: -15px; }
+  .main-slider .next-button {
+    right: 20px;
+    padding-left: 12px; }
+    .main-slider .next-button:after {
+      content: '';
+      display: block;
+      height: 34px;
+      width: 15px;
+      border-top: 18px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 7px solid #f7f7f7;
+      position: absolute;
+      top: 0px;
+      right: -15px; }
+  .main-slider .main-slider__element {
+    position: absolute; }
+    .main-slider .main-slider__element .main-slider__description {
+      position: absolute;
+      bottom: 5px;
+      height: 76px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-left: 24px;
+      background-color: rgba(0, 0, 0, 0.6); }
+      .main-slider .main-slider__element .main-slider__description .main-slider__title {
+        margin-top: 17px;
+        margin-bottom: 6px;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: "Elektra Light Pro", sans-serif;
+        text-decoration: underline; }
+      .main-slider .main-slider__element .main-slider__description .main-slider__text {
+        color: #ffffff; }
+  .main-slider .main-slider__element:nth-child(1) {
+    z-index: 3; }
 
 .list-style-wrapper {
   float: right;

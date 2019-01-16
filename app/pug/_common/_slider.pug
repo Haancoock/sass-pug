@@ -1,13 +1,29 @@
 .main-slider
+	button(class="slide__button").prev-button
+		| Пред.
 	.main-slider__element
-		img(src="", alt="").main-slider__img
-		.prev-button
-			| Пред.
-		.next-button
-			| След.
+		img(src="images/slideImage1.png", alt="").main-slider__img
 		.main-slider__description
 			h3.main-slider__title
 				a(href="#").main-slider__link
-					| iMac за пол цены 
+					| iMac за пол цены  
 			span.main-slider__text
 				| Прини свой старый Mac  и получи скидку на новый!
+	.main-slider__element
+		img(src="images/slideImage2.png", alt="").main-slider__img
+		.main-slider__description
+			h3.main-slider__title
+				a(href="#").main-slider__link
+					| До 31 декабря, iPhone 4 за 9900 руб. 
+			span.main-slider__text
+				| Нет денег на шестой iPhone? Купи себе четвертый!
+	.main-slider__element
+		img(src="images/slideImage3.png", alt="").main-slider__img
+		.main-slider__description
+			h3.main-slider__title
+				a(href="#").main-slider__link
+					| Конкурс на концепт iPhone 7
+			span.main-slider__text
+				| Выиграй iPad Air за самый необычный и интересный дизайн нового iPhone 7.
+	button(class="slide__button").next-button
+		| След.

@@ -10,5 +10,7 @@
 	.right-content{
 		float: right;
 		margin-top: 38px;
+		margin-right: 3px;
+		@include clearfix;
 	}
 }
