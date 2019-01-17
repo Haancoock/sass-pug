@@ -117,7 +117,8 @@ mixin mainProducts(obj, title)
 				li.main-products__item
 					img(src= index.img).main-products__img
 					span.main-products__title=index.name
-					.main-products__stats
+					.main-products__stats-wrapper
 						each stat in index.stats
-							span.main-products__stats-name= stat.name
-							span.main-products__stats-value= stat.value
+							.main-products__stats
+								span.main-products__stats-name= stat.name
+								span.main-products__stats-value= stat.value
