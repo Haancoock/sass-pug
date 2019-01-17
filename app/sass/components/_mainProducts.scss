@@ -51,6 +51,11 @@
 			border: 1px solid #dce2ec;
 			margin-left: 25px;
 			
+			&:hover{
+				box-shadow: 0 0 1px rgba(0,0,0,0.5);
+				cursor: pointer;
+			}
+			
 			&:first-child{
 				margin-left:0;
 			}

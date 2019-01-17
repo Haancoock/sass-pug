@@ -1242,6 +1242,10 @@ body {
       content: "";
       clear: both;
       display: block; }
+    .main-products .main-products__list .main-products__item:hover {
+      -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
     .main-products .main-products__list .main-products__item:first-child {
       margin-left: 0; }
     .main-products .main-products__list .main-products__item .main-products__title-wrapper {
