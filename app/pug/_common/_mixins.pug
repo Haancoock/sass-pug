@@ -115,8 +115,9 @@ mixin mainProducts(obj, title)
 		ul.main-products__list
 			each index in obj
 				li.main-products__item
-					img(src= index.img).main-products__img
-					span.main-products__title=index.name
+					.main-products__title-wrapper
+						img(src= index.img).main-products__img
+						a(href="").main-products__title=index.name
 					.main-products__stats-wrapper
 						each stat in index.stats
 							.main-products__stats
