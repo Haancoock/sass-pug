@@ -452,7 +452,7 @@ body {
 .store-descript {
   float: right;
   width: 740px;
-  padding-bottom: 295px; }
+  padding-bottom: 57px; }
   .store-descript .store-descript__title {
     font-size: 25px;
     font-weight: 700;
@@ -465,7 +465,7 @@ body {
 
 .product-store-descript {
   float: left;
-  padding-bottom: 295px;
+  padding-bottom: 57px;
   margin-top: 40px;
   margin-bottom: 11px;
   padding-top: 20px; }
