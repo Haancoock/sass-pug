@@ -1,6 +1,8 @@
 .content{
+	position: relative;
 	
 	.left-content{
+		position: relative;
 		float: left;
 		width: 229px;
 		margin-top:38px;
@@ -8,6 +10,7 @@
 	}
 
 	.right-content{
+		position: relative;
 		float: right;
 		margin-top: 38px;
 		margin-right: 3px;
