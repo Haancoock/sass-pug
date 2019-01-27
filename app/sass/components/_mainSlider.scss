@@ -71,7 +71,8 @@
 	}
 
 	.main-slider__element{
-		position: absolute;
+		position: relative;
+		display: none;
 
 		.main-slider__description{
 			position: absolute;
@@ -97,8 +98,8 @@
 		}
 	}
 
-	.main-slider__element:nth-child(1){
-		z-index:3;
-
+	.main-slider__element-shown{
+		z-index: 3;
+		display: block;
 	}
 }

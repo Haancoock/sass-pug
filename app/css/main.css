@@ -1175,7 +1175,8 @@ body {
       top: 0px;
       right: -15px; }
   .main-slider .main-slider__element {
-    position: absolute; }
+    position: relative;
+    display: none; }
     .main-slider .main-slider__element .main-slider__description {
       position: absolute;
       bottom: 5px;
@@ -1194,8 +1195,9 @@ body {
         text-decoration: underline; }
       .main-slider .main-slider__element .main-slider__description .main-slider__text {
         color: #ffffff; }
-  .main-slider .main-slider__element:nth-child(1) {
-    z-index: 3; }
+  .main-slider .main-slider__element-shown {
+    z-index: 3;
+    display: block; }
 
 .main-products {
   margin-bottom: 38px; }
