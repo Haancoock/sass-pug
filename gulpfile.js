@@ -52,13 +52,21 @@ gulp.task('compass', function() { // Подключеник Compass
     }));
 });
 
-gulp.task('scripts', function() {
+gulp.task('js-libs', function() {
     return gulp.src([ // Все необходимые библиотеки
         'node_modules/jquery/dist/jquery.min.js' // jQuery
         ])
         .pipe(concat('libs.min.js')) // Собрать все библиотеки в новом файле libs.min.js
         .pipe(uglify()) // Сжать созданный JS файл
         .pipe(gulp.dest('app/js')); // Выгрузить в указанную папку
+});
+
+gulp.task('js', function(){
+    return gulp.src('app/js/_modules/*.js')
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'));
+
 });
 
 gulp.task('css-libs', ['sass'], function() {
@@ -71,7 +79,7 @@ gulp.task('css-libs', ['sass'], function() {
         .pipe(gulp.dest('app/css')); // Выгружает в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'js-libs','js'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/pug/**/*.pug', ['pug']); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
@@ -93,7 +101,7 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img')); // Выгружает на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'pug', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'pug', 'sass', 'js-libs', 'js'], function() {
 
     var buildCss = gulp.src([ // Переносит библиотеки в продакшен
         'app/css/main.css',
@@ -104,7 +112,7 @@ gulp.task('build', ['clean', 'img', 'pug', 'sass', 'scripts'], function() {
     var buildFonts = gulp.src('app/fonts/**/*') // Переносит шрифты в продакшен
     .pipe(gulp.dest('dist/fonts'))
 
-    var buildJs = gulp.src('app/js/**/*') // Переносит скрипты в продакшен
+    var buildJs = gulp.src('app/js/*.js') // Переносит скрипты в продакшен
     .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src('app/*.html') // Переносит HTML в продакшен

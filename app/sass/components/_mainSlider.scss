@@ -71,12 +71,11 @@
 	}
 
 	.main-slider__element{
-		position: relative;
-		display: none;
+		position: absolute;
 
 		.main-slider__description{
-			position: relative;
-			bottom:98px;
+			position: absolute;
+			bottom:5px;
 			height: 76px;
 			width: 100%;
 			box-sizing:border-box;
@@ -98,9 +97,8 @@
 		}
 	}
 
-	.main-slider__element:nth-child(3){
+	.main-slider__element:nth-child(1){
 		z-index:3;
-		display: block;
 
 	}
 }
