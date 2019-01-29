@@ -61,12 +61,11 @@ gulp.task('js-libs', function() {
         .pipe(gulp.dest('app/js')); // Выгрузить в указанную папку
 });
 
-gulp.task('js', function(){
-    return gulp.src('app/js/_modules/*.js')
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
-
+gulp.task('js', function() {
+    return gulp.src(['app/js/_modules/_mainSlide.js'
+        ])
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest('app/js'));
 });
 
 gulp.task('css-libs', ['sass'], function() {

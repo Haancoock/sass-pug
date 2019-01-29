@@ -1175,8 +1175,11 @@ body {
       top: 0px;
       right: -15px; }
   .main-slider .main-slider__element {
-    position: relative;
-    display: none; }
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s; }
     .main-slider .main-slider__element .main-slider__description {
       position: absolute;
       bottom: 5px;
@@ -1197,7 +1200,10 @@ body {
         color: #ffffff; }
   .main-slider .main-slider__element-shown {
     z-index: 3;
-    display: block; }
+    opacity: 1;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s; }
 
 .main-products {
   margin-bottom: 38px; }
