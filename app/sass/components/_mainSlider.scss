@@ -71,8 +71,9 @@
 	}
 
 	.main-slider__element{
-		position: relative;
-		display: none;
+		position: absolute;
+		opacity:0;
+		transition: 1.5s;
 
 		.main-slider__description{
 			position: absolute;
@@ -100,6 +101,7 @@
 
 	.main-slider__element-shown{
 		z-index: 3;
-		display: block;
+		opacity: 1;
+		transition: 1.5s;
 	}
 }
